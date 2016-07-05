@@ -18,5 +18,19 @@ namespace LeetSpeak.Objects
       //Assert
       Assert.Equal(result, expectedResult);
     }
+
+    [Fact]
+    public void LeetSpeakGenerator_userInputBob_ReturnB0b()
+    {
+      //Arrange
+      string expectedResult = "B0b";
+      LeetSpeakTranslator newLeetSpeakTranslator = new LeetSpeakTranslator();
+
+      //Act
+      string result = newLeetSpeakTranslator.LeetSpeakGenerator("Bob");
+
+      //Assert
+      Assert.Equal(result, expectedResult);
+    }
   }
 }
