@@ -6,14 +6,14 @@ namespace LeetSpeak.Objects
   public class LeetSpeakTest
   {
     [Fact]
-    public void LeetSpeakGenerator_userInputTree_ReturnTr33()
+    public void LeetSpeakGenerator_userInputTree_ReturnM3()
     {
       //Arrange
-      string expectedResult = "Tr33";
+      string expectedResult = "M3";
       LeetSpeakTranslator newLeetSpeakTranslator = new LeetSpeakTranslator();
 
       //Act
-      string result = newLeetSpeakTranslator.LeetSpeakGenerator("Tree");
+      string result = newLeetSpeakTranslator.LeetSpeakGenerator("Me");
 
       //Assert
       Assert.Equal(result, expectedResult);
@@ -28,6 +28,20 @@ namespace LeetSpeak.Objects
 
       //Act
       string result = newLeetSpeakTranslator.LeetSpeakGenerator("Bob");
+
+      //Assert
+      Assert.Equal(result, expectedResult);
+    }
+
+    [Fact]
+    public void LeetSpeakGenerator_userInputTree_Return7r33()
+    {
+      //Arrange
+      string expectedResult = "7r33";
+      LeetSpeakTranslator newLeetSpeakTranslator = new LeetSpeakTranslator();
+
+      //Act
+      string result = newLeetSpeakTranslator.LeetSpeakGenerator("Tree");
 
       //Assert
       Assert.Equal(result, expectedResult);
