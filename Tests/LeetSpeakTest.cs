@@ -46,5 +46,19 @@ namespace LeetSpeak.Objects
       //Assert
       Assert.Equal(result, expectedResult);
     }
+
+    [Fact]
+    public void LeetSpeakGenerator_userInputInitiate_Return1ni7ia73()
+    {
+      //Arrange
+      string expectedResult = "1ni7ia73";
+      LeetSpeakTranslator newLeetSpeakTranslator = new LeetSpeakTranslator();
+
+      //Act
+      string result = newLeetSpeakTranslator.LeetSpeakGenerator("Initiate");
+
+      //Assert
+      Assert.Equal(result, expectedResult);
+    }
   }
 }

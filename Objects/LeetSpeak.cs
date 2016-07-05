@@ -12,7 +12,11 @@ namespace LeetSpeak.Objects
       char[] inputtedArray = input.ToCharArray();
       foreach (char character in inputtedArray)
       {
-        if (character.ToString() == "t" || character.ToString() == "T")
+        if (character.ToString() == "I")
+        {
+          result = result + "1";
+        }
+        else if (character.ToString() == "t" || character.ToString() == "T")
         {
           result = result + "7";
         }
