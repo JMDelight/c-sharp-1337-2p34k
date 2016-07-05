@@ -9,15 +9,17 @@ namespace LeetSpeak.Objects
     public string LeetSpeakGenerator(string input)
     {
       string result = "";
-      string prevCharacter = "";
+      string prevCharacter = "/";
+      List<string> alphabet = new List<string> {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
       char[] inputtedArray = input.ToCharArray();
       foreach (char character in inputtedArray)
       {
-        if (character.ToString() == "S" && inputtedArray[0].ToString() != "S" && prevCharacter != " ")
+        if (character.ToString() == "S" && alphabet.Contains(prevCharacter.ToLower()))
         {
           result = result + "Z";
+
         }
-        else if (character.ToString() == "s" && inputtedArray[0].ToString() != "s" && prevCharacter != " ")
+        else if (character.ToString() == "s" && alphabet.Contains(prevCharacter.ToLower()))
         {
           result = result + "z";
         }

@@ -16,7 +16,7 @@ namespace LeetSpeak.Objects
       string result = newLeetSpeakTranslator.LeetSpeakGenerator("Me");
 
       //Assert
-      Assert.Equal(result, expectedResult);
+      Assert.Equal(expectedResult, result);
     }
 
     [Fact]
@@ -30,7 +30,7 @@ namespace LeetSpeak.Objects
       string result = newLeetSpeakTranslator.LeetSpeakGenerator("Bob");
 
       //Assert
-      Assert.Equal(result, expectedResult);
+      Assert.Equal(expectedResult, result);
     }
 
     [Fact]
@@ -44,7 +44,7 @@ namespace LeetSpeak.Objects
       string result = newLeetSpeakTranslator.LeetSpeakGenerator("Tree");
 
       //Assert
-      Assert.Equal(result, expectedResult);
+      Assert.Equal(expectedResult, result);
     }
 
     [Fact]
@@ -58,7 +58,7 @@ namespace LeetSpeak.Objects
       string result = newLeetSpeakTranslator.LeetSpeakGenerator("Initiate");
 
       //Assert
-      Assert.Equal(result, expectedResult);
+      Assert.Equal(expectedResult, result);
     }
 
     [Fact]
@@ -72,7 +72,7 @@ namespace LeetSpeak.Objects
       string result = newLeetSpeakTranslator.LeetSpeakGenerator("Pass");
 
       //Assert
-      Assert.Equal(result, expectedResult);
+      Assert.Equal(expectedResult, result);
     }
 
     [Fact]
@@ -86,7 +86,7 @@ namespace LeetSpeak.Objects
       string result = newLeetSpeakTranslator.LeetSpeakGenerator("Snakes");
 
       //Assert
-      Assert.Equal(result, expectedResult);
+      Assert.Equal(expectedResult, result);
     }
 
     [Fact]
@@ -100,7 +100,7 @@ namespace LeetSpeak.Objects
       string result = newLeetSpeakTranslator.LeetSpeakGenerator("Snakes slither");
 
       //Assert
-      Assert.Equal(result, expectedResult);
+      Assert.Equal(expectedResult, result);
     }
   }
 }
