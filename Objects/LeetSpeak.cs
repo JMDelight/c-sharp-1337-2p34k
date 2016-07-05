@@ -9,14 +9,15 @@ namespace LeetSpeak.Objects
     public string LeetSpeakGenerator(string input)
     {
       string result = "";
+      string prevCharacter = "";
       char[] inputtedArray = input.ToCharArray();
       foreach (char character in inputtedArray)
       {
-        if (character.ToString() == "S" && inputtedArray[0].ToString() != "S")
+        if (character.ToString() == "S" && inputtedArray[0].ToString() != "S" && prevCharacter != " ")
         {
           result = result + "Z";
         }
-        else if (character.ToString() == "s" && inputtedArray[0].ToString() != "s")
+        else if (character.ToString() == "s" && inputtedArray[0].ToString() != "s" && prevCharacter != " ")
         {
           result = result + "z";
         }
@@ -40,6 +41,7 @@ namespace LeetSpeak.Objects
         {
           result = result + character.ToString();
         }
+        prevCharacter = character.ToString();
       }
       // string result = string.Join("", inputtedArray);
       return result;

@@ -88,5 +88,19 @@ namespace LeetSpeak.Objects
       //Assert
       Assert.Equal(result, expectedResult);
     }
+
+    [Fact]
+    public void LeetSpeakGenerator_userInputSnakesSlither_ReturnSnak3zSli7h3r()
+    {
+      //Arrange
+      string expectedResult = "Snak3z sli7h3r";
+      LeetSpeakTranslator newLeetSpeakTranslator = new LeetSpeakTranslator();
+
+      //Act
+      string result = newLeetSpeakTranslator.LeetSpeakGenerator("Snakes slither");
+
+      //Assert
+      Assert.Equal(result, expectedResult);
+    }
   }
 }
