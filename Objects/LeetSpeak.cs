@@ -12,7 +12,15 @@ namespace LeetSpeak.Objects
       char[] inputtedArray = input.ToCharArray();
       foreach (char character in inputtedArray)
       {
-        if (character.ToString() == "I")
+        if (character.ToString() == "S" && inputtedArray[0].ToString() != "S")
+        {
+          result = result + "Z";
+        }
+        else if (character.ToString() == "s" && inputtedArray[0].ToString() != "s")
+        {
+          result = result + "z";
+        }
+        else if (character.ToString() == "I")
         {
           result = result + "1";
         }

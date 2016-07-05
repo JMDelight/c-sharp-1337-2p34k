@@ -60,5 +60,33 @@ namespace LeetSpeak.Objects
       //Assert
       Assert.Equal(result, expectedResult);
     }
+
+    [Fact]
+    public void LeetSpeakGenerator_userInputPass_ReturnPazz()
+    {
+      //Arrange
+      string expectedResult = "Pazz";
+      LeetSpeakTranslator newLeetSpeakTranslator = new LeetSpeakTranslator();
+
+      //Act
+      string result = newLeetSpeakTranslator.LeetSpeakGenerator("Pass");
+
+      //Assert
+      Assert.Equal(result, expectedResult);
+    }
+
+    [Fact]
+    public void LeetSpeakGenerator_userInputSnakes_ReturnSnak3z()
+    {
+      //Arrange
+      string expectedResult = "Snak3z";
+      LeetSpeakTranslator newLeetSpeakTranslator = new LeetSpeakTranslator();
+
+      //Act
+      string result = newLeetSpeakTranslator.LeetSpeakGenerator("Snakes");
+
+      //Assert
+      Assert.Equal(result, expectedResult);
+    }
   }
 }
